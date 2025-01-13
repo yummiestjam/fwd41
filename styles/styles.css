@@ -1,9 +1,16 @@
-html {
+/* commented bc we have normalize-fwd.css */
+/* html {
 	box-sizing: border-box;
 }
 
 *, *::before, *::after {
 	box-sizing: inherit;
+} */
+
+/* simulate mobile view for quick iteration */
+body {
+	max-width: 31.25rem;
+	margin: 0 auto;
 }
 
 body {
@@ -48,6 +55,32 @@ nav li {
 	display: inline-block;
 }
 
+/* this selects a SECTIOn with class WARNING */
 section.warning img {
 	display: block;
+	padding: 1rem .5rem;
 }
+
+/* this selects section-table THE CLASS */
+.section-table {
+	background-color: #eee;
+	/* padding-top: 1rem;
+	padding-left: 2rem;
+	padding-right: 3rem;
+	padding-bottom: 4rem; */
+
+	/* full shorthand goes clockwise from top!! */
+	padding: 1rem 2rem 3rem 4rem;
+	margin-top: 6rem;
+}
+
+td,
+th {
+	padding: .5rem;
+}
+
+.table-custom {
+	/* top, side, bottom */
+	padding: 2rem 1rem 3rem;
+}
+
